@@ -47,11 +47,15 @@ inputs:
       position: 7
 
 outputs:
-  - id: out_vcf
+  - id: vcf
     type: File
     format: edam:format_3016
     outputBinding:
       glob: $(inputs.outprefix).vcf.gz
+  - id: log
+    type: File
+    outputBinding:
+      glob: $(inputs.outprefix).log
 
 arguments:
   - position: 2
