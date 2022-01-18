@@ -39,7 +39,7 @@ inputs:
 
   gp:
     type: string
-    doc: A flag controling whether output genotype probability
+    doc: A flag controling whether output genotype probability (true or false)
     default: true
 
   nthreads:
