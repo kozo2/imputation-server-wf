@@ -32,7 +32,7 @@ inputs:
       separate: false
       position: 4
 
-  chrom:
+  region:
     type: string
     inputBinding:
       prefix: chrom=
