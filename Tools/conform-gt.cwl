@@ -10,7 +10,7 @@ $namespaces:
 
 requirements:
   DockerRequirement:
-    dockerPull: hacchy/beagle:5.2
+    dockerPull: hacchy/beagle-5.2:1.0.0
     
 baseCommand: [ java ]
 
