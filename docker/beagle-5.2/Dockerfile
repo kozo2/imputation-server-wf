@@ -6,4 +6,7 @@ WORKDIR /tools
 # conform-gt
 RUN wget https://faculty.washington.edu/browning/conform-gt/conform-gt.24May16.cee.jar
 
+# bref
+RUN wget https://faculty.washington.edu/browning/beagle/bref3.28Jun21.220.jar
+
 CMD ["/bin/bash"]
