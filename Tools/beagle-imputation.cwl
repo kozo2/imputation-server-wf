@@ -16,13 +16,20 @@ baseCommand: [ java ]
 
 inputs:
 
+  java_options:
+    type: string?
+    default: -Xmx64g
+    inputBinding:
+      position: 1
+      shellQuote: false
+
   ref:
     type: File
     doc: Reference file
     inputBinding:
       prefix: ref=
       separate: false
-      position: 3
+      position: 4
 
   gt:
     type: File
@@ -30,7 +37,7 @@ inputs:
     inputBinding:
       prefix: gt=
       separate: false
-      position: 4
+      position: 5
 
   map:
     type: File
@@ -38,14 +45,14 @@ inputs:
     inputBinding:
       prefix: map=
       separate: false
-      position: 5
+      position: 6
 
   region:
     type: string
     inputBinding:
       prefix: chrom=
       separate: false
-      position: 6
+      position: 7
 
   gp:
     type: string
@@ -53,7 +60,7 @@ inputs:
     inputBinding:
       prefix: gp=
       separate: false
-      position: 8
+      position: 9
 
   nthreads:
     type: int
@@ -61,14 +68,14 @@ inputs:
     inputBinding:
       prefix: nthreads=
       separate: false
-      position: 9
+      position: 10
 
   outprefix:
     type: string
     inputBinding:
       prefix: out=
       separate: false
-      position: 10
+      position: 11
 
 outputs:
   - id: vcf
@@ -85,7 +92,7 @@ arguments:
   - position: 2
     prefix: -jar
     valueFrom: /usr/local/share/beagle-5.2_21Apr21.304-0/beagle.jar
-  - position: 7
+  - position: 8
     prefix: impute=
     separate: false
     valueFrom: "true"
