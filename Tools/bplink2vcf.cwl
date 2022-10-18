@@ -9,11 +9,13 @@ hints:
 arguments:
   - --allow-extra-chr
   - --recode
+  - vcf-iid
   - --bfile
   - $(inputs.in_bed.dirname)/$(inputs.in_bed.nameroot)
   - --out
   - $(inputs.out_name)
   - --biallelic-only
+  - strict
   - --keep-allele-order
 inputs:
   - id: in_bed
@@ -24,15 +26,9 @@ inputs:
   - id: out_name
     type: string
 outputs:
-  - id: out_vcf
+  vcf_out:
     type: File
+    secondaryFiles:
+      - ^.log
     outputBinding:
       glob: "$(inputs.out_name).vcf"
-  - id: out_map
-    type: File
-    outputBinding:
-      glob: "$(inputs.out_name).map"
-  - id: out_ped
-    type: File
-    outputBinding:
-      glob: "$(inputs.out_name).ped"
