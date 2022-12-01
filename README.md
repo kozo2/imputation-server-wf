@@ -44,6 +44,10 @@ The output of the workflow includes the VCF files and their index files (TBI for
 | beagle-log | Log of the step 2 (a text file per chunk) |
 | beagle-tbi | Results of the step 3 (a TBI index file per chunk) |
 
+## File format conversion workflow (PLINK to VCF)
+### Inputs of this workflow
 
+The workflow for the PLINK to VCF file conversion takes o genotype datasets as inputs. The first is an experimentally observed genotype dataset (referred to as target dataset), and the second is a reference panel genotype dataset. Our workflow assumes that both genotype datasets are stored in the variant call format (VCF). We recommend users to apply quality control (QC) steps, such as missing call rate and Hardy-Weinberg equilibrium filters, to the target dataset before using this workflow. Regarding non-pseudoautosomal region on the X chromosome, this workflow assumes that male haploid genotypes are coded as “homozygous diploid”, and that the male “homozygous diploid” and female heterozygous diploid genotypes are recoded in a single unphased VCF file, according to an existing imputation workflow
 
-
+## File format conversion workflow (binary-PLINK to VCF)
+### Inputs of this workflow
