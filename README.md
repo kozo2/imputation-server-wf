@@ -44,6 +44,27 @@ The output of the workflow includes the VCF files and their index files (TBI for
 | beagle-log | Log of the step 2 (a text file per chunk) |
 | beagle-tbi | Results of the step 3 (a TBI index file per chunk) |
 
+## File format conversion workflow (PLINK to VCF)
+### Inputs of this workflow
+
+This workflow converts PLINK file to VCF file.
+
+There are 2 mandatory inputs.
+
+| Input name | Content  |
+|---|---|
+| in_ped  | Target PLINK (PED) file path |
+| out_name | Output VCF file name |
 
 
+## File format conversion workflow (binary-PLINK to VCF)
+### Inputs of this workflow
 
+This workflow converts binary-PLINK file to VCF file.
+
+There are 2 mandatory inputs.
+
+| Input name | Content  |
+|---|---|
+| in_bed  | Target binary-PLINK (BED) file path |
+| out_name | Output VCF file name |
