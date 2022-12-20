@@ -9,14 +9,14 @@ arguments:
   - --recode
   - vcf-iid
   - --file
-  - $(inputs.in_bed.dirname)/$(inputs.in_bed.nameroot)
+  - $(inputs.in_ped.dirname)/$(inputs.in_ped.nameroot)
   - --out
   - $(inputs.out_name)
   - --biallelic-only
   - strict
   - --keep-allele-order
 inputs:
-  - id: in_bed
+  - id: in_ped
     type: File
     secondaryFiles:
       - ^.ped
