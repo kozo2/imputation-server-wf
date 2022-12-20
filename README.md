@@ -53,7 +53,7 @@ There are 2 mandatory inputs.
 
 | Input name | Content  |
 |---|---|
-| in_bed  | Target PLINK (PED) file path |
+| in_ped  | Target PLINK (PED) file path |
 | out_name | Output VCF file name |
 
 
