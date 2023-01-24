@@ -5,6 +5,8 @@ hints:
   DockerRequirement:
     dockerPull: quay.io/biocontainers/plink:1.90b6.21--h516909a_0
 arguments:
+  - --maf
+  - "0.001"
   - --allow-extra-chr
   - --recode
   - vcf-iid
