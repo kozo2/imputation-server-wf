@@ -8,7 +8,7 @@ arguments:
   - --allow-extra-chr
   - --recode
   - --maf
-  - 0.001
+  - "0.001"
   - vcf-iid
   - --bfile
   - $(inputs.in_bed.dirname)/$(inputs.in_bed.nameroot)
