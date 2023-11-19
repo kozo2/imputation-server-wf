@@ -1,8 +1,0 @@
-in_bed:
-  class: File
-  path: ./1KG.JPT.bed
-out_name: "testcwlout"
-in_modelfile:
-  class: File
-  path: ./HumanOmni2.5-Asian-HLA4-hg19.RData
-  
