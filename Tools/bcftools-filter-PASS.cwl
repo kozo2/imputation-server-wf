@@ -1,8 +1,8 @@
 #!/usr/bin/env cwl-runner
 
 class: CommandLineTool
-id: bcftools-filter-INFO_AC10
-label: bcftools-filter-INFO_AC10
+id: bcftools-filter-PASS
+label: bcftools-filter-PASS
 cwlVersion: v1.1
 
 $namespaces:
