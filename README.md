@@ -1,3 +1,7 @@
+
+<img src="./logo/logo_color.png" width=50%>
+
+
 # The NBDC-DDBJ imputation server workflows
 This repository contains the following workflows:
 - [Genotype imputation workflow](./Workflows/beagle-imputation-scatter-region.cwl)
