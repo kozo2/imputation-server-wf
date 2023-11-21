@@ -5,7 +5,7 @@ requirements:
 baseCommand: ["bash", "/opt/run-hibag.sh"]
 hints:
   DockerRequirement:
-    dockerPull: kozo2/dockerhibag:latest
+    dockerPull: kozo2/hibag:1.38.0
 arguments:
   - $(inputs.in_bed.dirname+"/"+inputs.in_bed.nameroot)
   - $(inputs.out_name)
