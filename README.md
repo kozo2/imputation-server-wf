@@ -1,5 +1,5 @@
 
-<img src="./logo/logo_color.png" width=50%>
+<img src="https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png" width=50%>
 
 
 # The NBDC-DDBJ imputation server workflows
