@@ -23,7 +23,7 @@ inputs:
       position: 3
 
   mac:
-    type: float
+    type: int
     doc: cut-off of MAC
 
   prefix:
