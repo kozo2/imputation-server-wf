@@ -1,8 +1,8 @@
 #!/usr/bin/env cwl-runner
 
 class: CommandLineTool
-id: beagle-imputation
-label: beagle-imputation
+id: beagle-bref3
+label: beagle-bref3
 cwlVersion: v1.1
 
 $namespaces:
