@@ -12,7 +12,7 @@ inputs:
   - id: filter_chrom_out_name
     type: string
 # for runhibag
-  - id: runhibag_out_name
+  - id: out_name
     type: string
   - id: in_modelfile
     type: File
@@ -38,7 +38,6 @@ steps:
     run: runhibag.cwl
     in:
       in_bed: filterchrom/vcf_out
-      out_name: runhibag_out_name
+      out_name: out_name
       in_modelfile: in_modelfile
     out: [hibag_out, hibag_log]
-    
