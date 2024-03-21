@@ -42,6 +42,10 @@ inputs:
   region:
     type: string
 
+  beagle_java_options:
+    type: string?
+    default: -Xmx450g
+
   beagle_nthreads:
     type: int
     default: 64
@@ -219,6 +223,7 @@ steps:
       map: map
       region: region
       nthreads: beagle_nthreads
+      java_options: beagle_java_options
       tmpprefix: prefix
       outprefix:
         valueFrom: $(inputs.tmpprefix).beagle_phasing
